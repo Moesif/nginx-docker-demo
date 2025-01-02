@@ -1,6 +1,6 @@
 FROM nginx:1.15-alpine
 
-RUN apk update && apk add git unzip wget lua-dev build-base luarocks
+RUN apk update && apk add git unzip wget zlib-dev lua-dev build-base luarocks
 
 RUN luarocks-5.1 install --server=http://luarocks.org/manifests/moesif lua-resty-moesif
 
