@@ -27,7 +27,7 @@ docker-compose up -d
 By default, The container is listening on port 8000. You should now be able to make a simple `GET` request: 
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"name":"moesif"}' "http://localhost:8000/api?x=2&y=4" -H 'User-Id:123' -H "Company-Id:567"
+curl -X GET http://localhost:8000
 ```
 
 4. The data should be captured in the corresponding Moesif account.
