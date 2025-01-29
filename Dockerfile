@@ -22,7 +22,6 @@ RUN luarocks path --bin
 # Install Lua modules (including resty.core)
 RUN luarocks install --server=http://luarocks.org/manifests/moesif lua-resty-moesif && \
     luarocks install lua-resty-core && \
-    luarocks install lua-resty-string && \
     luarocks install lua-resty-jwt
 
 # Configure Nginx to use LuaJIT 2.1
